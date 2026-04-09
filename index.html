@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Semântico</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <div class="grupo">
         <header class="cabecalho">
@@ -31,13 +32,45 @@
             <section class="secao">
                 <h3>Painel Principal</h3>
                 <p>Nome: <span id="nomeUsuario">João Barão</span></p>
-                <p>Curso: Desenvolvendo Web Front-End</p>
-                <p>Status: Ativo</p>
+                <p>Curso: <span id="nomeCurso">Desenvolvendo Web Front-End</span></p>
+                <p>Status: <span id="status">Ativo</span></p>
                 <h3>Alterar Nome</h3>
-                <div>
+                <div class="formulario">
                     <input type="text" name="inputNome" id="inputNome">
                     <button onclick="alterarNome()">Alterar</button>
                 </div>
+                <div class="formulario">
+                    <h3>Alterar Curso</h3>
+                    <input type="text" name="inputCurso" id="inputCurso">
+                    <button onclick="alterarCurso()">Alterar</button>
+                </div>  
+                <div class="formulario">
+                    <h3>Alterar Status</h3>
+                    <input type="text" name="inputStatus" id="inputStatus">
+                    <button onclick="alterarStatus()">Alterar</button>
+                </div>
+                <h3 class="tituloCor">Alterar cores do Site</h3>
+                <div class="linha-cor">
+                    <p>Header:</p>
+                    <input type="color" name="corHeader" id="corHeader">
+                    <button onclick="mudarCorHeader()">Aplicar</button>
+                </div>
+                <div class="linha-cor">
+                    <p>Nav:</p>
+                    <input type="color" name="corNav" id="corNav">
+                    <button onclick="mudarCorNav()">Aplicar</button>
+                </div>
+                <div class="linha-cor">
+                    <p>Section:</p>
+                    <input type="color" name="corSection" id="corSection">
+                    <button onclick="mudarCorSection()">Aplicar</button>
+                </div>
+                <div class="linha-cor">
+                    <p>Rodapé:</p>
+                    <input type="color" name="corFooter" id="corFooter">
+                    <button onclick="mudarCorFooter()">Aplicar</button>
+                </div>
+               
             </section>
             <hr>
         </div>
@@ -55,4 +88,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

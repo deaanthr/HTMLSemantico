@@ -9,8 +9,8 @@
 }
 
 .cabecalho {    
-    background-color: #12ddaa;
-    color: #fff;
+    background-color: #1e3a8a;
+    color: #ffffff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -24,16 +24,15 @@
     font-size: larger;
 }
 .menu a:hover {
-    color: black;
-    opacity: 0.65;
+    color: #38bdf8;
 }
 
 .conteudo {
     display: flex;
-    height: 200px;
 }
 .navegacao {
-    background-color: #ad5566;
+    background-color: #7c3aed;
+    color: #ffffff;
     display: inline-block;
     width: 30%;
     padding: 10px;
@@ -47,7 +46,8 @@
 }
 
 .secao {
-    background-color: #22ffaa;
+    background-color: #f1f5f9;
+    color: #1e293b;
     display: inline-block;
     width: 70%;
     padding: 10px;
@@ -59,6 +59,26 @@
 .secao formulario {
     display: flex;
 }
+
+.formulario {
+    margin-bottom: 10px;
+}
+
+.tituloCor {
+    margin-bottom: 10px;
+}
+
+.linha-cor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.linha-cor p {
+    margin: 0;
+    width: 50px;
+}
+
 
 .rodape {
     background-color: #00ddff;
